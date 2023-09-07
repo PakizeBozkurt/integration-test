@@ -31,3 +31,6 @@ describe("transformToNumber()", () => {
   });
 });
 
+describe("cleanNumbers()", () => {
+  
+});
