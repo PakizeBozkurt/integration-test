@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 
-import { transformToNumber } from './numbers';
+import { cleanNumbers, transformToNumber } from './numbers';
 
 describe("transformToNumber()", () => {
   it("should transform a string number to a number of type number", () => {
@@ -32,5 +32,11 @@ describe("transformToNumber()", () => {
 });
 
 describe("cleanNumbers()", () => {
-  
+  it('should return an array of number values if an array of string number values is provided', () => {
+    const numberValues = ['1', '2'];
+
+    const cleanNumbers = cleanNumbers(numberValues);
+
+    expect(cleanNumbers[0]).toBeTypeOf('number');
+    });
 });
