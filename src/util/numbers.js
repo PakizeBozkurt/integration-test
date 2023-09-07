@@ -12,7 +12,7 @@ export function cleanNumbers(numberValues) {
     const number = transformToNumber(numberInput);
     validateNumber(number);
     numbers.push(number);
-    transformToNumber(numberInput);
+    
   }
   return numbers;
 }
