@@ -1,5 +1,10 @@
-import { it } from 'vitest';
+import { expect, it } from 'vitest';
+import { generateToken } from './async-example';
 
-import('should generate a token value', () => {
-    
+it('should generate a token value', () => {
+ const testUserEmail = 'test@example.com';
+
+ generateToken(testUserEmail, (err, token) => {
+     expect(token).toBeDefined();
+ });
 });
