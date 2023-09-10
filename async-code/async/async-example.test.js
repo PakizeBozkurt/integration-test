@@ -22,3 +22,11 @@ it('should generate a token value', () => {
 
   expect(generateTokenPromise(testUserEmail)).resolves.toBeDefined();
 });
+
+it("should generate a token value", async () => {
+  const testUserEmail = "test@example.com";
+
+  const token = generateTokenPromise(testUserEmail);
+
+  expect(token).toBeDefined();
+});
