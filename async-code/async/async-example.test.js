@@ -16,3 +16,7 @@ it("should generate a token value", (done) => {
     }
   });
 });
+
+it('should generate a token value', () => {
+  
+});
