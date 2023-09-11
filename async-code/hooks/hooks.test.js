@@ -9,10 +9,11 @@ beforeAll(() => {
   console.log('beforeAll()');
 });
 beforeEach(() => {
+  user = new User(testEmail);
   console.log("beforeEach()");
 });
 afterEach(() => {
-  user = new User(testEmail);
+  // user = new User(testEmail);
   console.log("afterEach()");
 });
 afterAll(() => {
