@@ -26,3 +26,7 @@ describe("class HttpError", () => {
     expect(testError.data).not.toBeDefined;
   });
 });
+
+describe('class ValidationError', ()  => {
+    it('')
+});
