@@ -14,4 +14,8 @@ describe('class HttpError', () => {
         expect(testError.message).toBe(testMessage);
         expect(testError.data).toBe(testData);
     });
+
+    it('should contain undefined as data if no data is provided', () => {
+
+    });
 });
