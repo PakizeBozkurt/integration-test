@@ -1,4 +1,4 @@
-import { it, vi } from 'vitest';
+import { it, vi, expect } from 'vitest';
 
 import { sendDataRequest } from './http';
 
@@ -21,5 +21,7 @@ return new Promise((resolve, reject) => {
 vi.stubGlobal('fetch', testFetch);
 
 it('should return any available response data', () => {
-    sendDataRequest();
+    const testData = { key: 'test '};
+
+    return expect(sendDataRequest(testData)). resolves.toEqual(testResponseData);
 });
