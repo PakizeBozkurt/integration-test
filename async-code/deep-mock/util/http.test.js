@@ -25,3 +25,7 @@ it("should return any available response data", () => {
 
   return expect(sendDataRequest(testData)).resolves.toEqual(testResponseData);
 });
+
+it('should convert the provided data to JSON before sending the request', () => {
+  
+});
