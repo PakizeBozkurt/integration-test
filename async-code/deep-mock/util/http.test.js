@@ -29,8 +29,16 @@ it("should return any available response data", () => {
   return expect(sendDataRequest(testData)).resolves.toEqual(testResponseData);
 });
 
-it('should convert the provided data to JSON before sending the request', () => {
+it('should convert the provided data to JSON before sending the request', async() => {
 const testData = { key: "test " };
 
-return expect(sendDataRequest(testData)).not.rejects.toBe('Not a string.');
+let errorMessage;
+
+try {
+  await sendDataRequest(testData);
+  
+} catch (error) {
+  errorMessage = error;
+}
+expect(errorMessage).not.toBe('Not a string.');
 });
