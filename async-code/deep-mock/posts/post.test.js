@@ -1,5 +1,9 @@
 import { describe, it } from "vitest";
 
+
+
 describe('extractPostData()', () => {
-    it();
+    it('should extract title and content from the provided from data', () => {
+        
+    });
 });
