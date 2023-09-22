@@ -16,6 +16,6 @@ vi.stubGlobal('document', document);
 
 
 
-it('first test', () => {
-    showError('test');
+it('should add an error paragraph to the id:"errors" element', () => {
+    
 })
