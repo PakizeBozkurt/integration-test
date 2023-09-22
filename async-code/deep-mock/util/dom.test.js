@@ -2,6 +2,6 @@ import { it } from 'vitest';
 
 import { showError } from './dom';
 
-import('first test', () => {
+it('first test', () => {
     showError('test');
 })
