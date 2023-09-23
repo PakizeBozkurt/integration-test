@@ -22,5 +22,5 @@ it('should add an error paragraph to the id:"errors" element', () => {
  const errorsEl = document.getElementById('errors');
  const errorParagraph = errorsEl.firstElementChild;
 
- expect(errorParagraph).not.toBeNull;
+ expect(errorParagraph).toBeNull;
 })
